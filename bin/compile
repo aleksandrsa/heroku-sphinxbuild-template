@@ -28,4 +28,5 @@ if [ -r repo/requirements.txt ]; then
 fi
 
 echo "-----> building document"
-sphinx-build -M html repo/$SOURCE_PATH build
+#sphinx-build -M html repo/$SOURCE_PATH build
+sphinx-autobuild -b html repo/$SOURCE_PATH build
